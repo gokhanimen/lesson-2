@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Rokkitt:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$first-font: 'Mulish',
+sans-serif;
+$second-font: 'Rokkitt',
+serif;
+body {
+    height: 100vh;
+    background-color: #01baef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1057px;
+    & .form-info {
+        border-radius: 15px;
+        width: 608px;
+        padding: 60px 90px;
+        background-color: #fff;
+        & .form-title {
+            font-family: $second-font;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 13px;
+            color: #161843;
+        }
+        & .form-desc {
+            max-width: 339px;
+            font-family: $first-font;
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 52px;
+            color: #161843;
+        }
+        & form {
+            & input {
+                height: 73px;
+                width: 430px;
+                border-radius: 5px;
+                border: 1px solid #CAD6E4;
+                padding: 25px;
+                &::placeholder {
+                    color: #717A90;
+                    font-family: $first-font;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+            & .form-group {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 16px;
+                padding-bottom: 55px;
+                margin-bottom: 35px;
+                border-bottom: 1px solid #CAD6E4;
+                & a {
+                    font-family: $first-font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #0C6787;
+                    text-decoration: none;
+                }
+                & button {
+                    height: 73px;
+                    width: 157px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $first-font;
+                    font-weight: 700;
+                    font-size: 18px;
+                    background-color: #046586;
+                    color: #fff;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: 0 4px 10px rgba(#000000, .25);
+                }
+                & .arrow {
+                    margin-left: 14px;
+                    display: inline-block;
+                    height: 32px;
+                    width: 32px;
+                    background-image: url(../img/arrow.svg);
+                }
+            }
+        }
+        & .form-login-title {
+            text-align: center;
+            color: #838A9E;
+            font-family: $first-font;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        & .form-api {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            & .btn {
+                height: 55px;
+                width: 207px;
+                font-family: $first-font;
+                font-weight: 400;
+                font-size: 16px;
+                background-color: #fff;
+                color: #000;
+                padding: 10px 45px;
+                border: 1px solid #CAD6E4;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                & .icon {
+                    height: 34px;
+                    width: 34px;
+                    display: inline-block;
+                    margin-right: 11px;
+                    background-size: cover;
+                    &.facebook {
+                        background-image: url(../img/facebook-logo.svg);
+                    }
+                    &.google {
+                        background-image: url(../img/google-logo.svg);
+                    }
+                }
+            }
+        }
+        & .forget-password {
+            color: #000;
+            text-align: center;
+            font-family: $first-font;
+            font-weight: 400;
+            font-size: 14px;
+            & a {
+                color: #046586;
+                margin-left: 5px;
+            }
+        }
+    }
+}
